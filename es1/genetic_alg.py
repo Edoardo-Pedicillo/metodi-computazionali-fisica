@@ -118,17 +118,7 @@ class Individual(list):
                     fitness+=4
                 else:
                     fitness-=0
-           
-        if max_len>25:
-                
-            fitness-=200
-                        
-
-        if "  " in new_message:
-            fitness-=10
         
-        fitness=max(fitness,1)
-
         
         
         self.fitness=fitness

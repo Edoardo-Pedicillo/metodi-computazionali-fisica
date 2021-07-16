@@ -8,11 +8,11 @@ class test_crittografia (unittest.TestCase):
 
        
     def test_Vigenere(self):
-        message="edoardo casa"
+        message="il cielo e blu su berlino"
         key="pippo"
         critt_message=crittografia.critt_Vigenere(message,key)
         #print(critt_message)
-        solution="tlcpesworogi"
+        solution="xtorwttcosoj ingboqsftxbb"
         self.assertEqual(critt_message,solution)
         decritt_message=crittografia.decritt_Vigenere(critt_message,key)
         print(decritt_message)

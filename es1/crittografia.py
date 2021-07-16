@@ -88,7 +88,7 @@ def decritt_Vigenere(message,key):
             index_message_element=alphabet.index(item)
             index_key_element=alphabet.index(key_list[(app-nspace)%len(key_list)])
             
-            new_message.append(alphabet[(index_message_element-index_key_element)%len(alphabet)])
+            new_message.append(alphabet[(index_message_element-index_key_element-1)%len(alphabet)])
             app+=1
         else:
             new_message.append(item)
