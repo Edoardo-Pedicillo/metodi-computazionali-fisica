@@ -115,13 +115,7 @@ class Individual(list):
                 else:
                     fitness-=0
            
-        if max_len>25:
-                
-            fitness-=200
-                        
-
-        if "  " in new_message:
-            fitness-=10
+        
         
         fitness=max(fitness,1)
 
