@@ -56,13 +56,13 @@ def critt_Vigenere(message,key):
     message_list=list(message)
     new_message=[]
     key_list=list(key)
-    nspace=0
+    
     app=0
     for item in message:
         if item in alphabet:
             index_message_element=alphabet.index(item)
-            index_key_element=alphabet.index(key_list[(app-nspace)%len(key_list)])
-            new_message.append(alphabet[(index_key_element+index_message_element)%len(alphabet)])
+            index_key_element=alphabet.index(key_list[(app)%len(key_list)])
+            new_message.append(alphabet[(index_key_element+index_message_element+1)%len(alphabet)])
             app+=1
             
         else:
