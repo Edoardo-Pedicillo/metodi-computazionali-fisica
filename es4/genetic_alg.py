@@ -392,7 +392,7 @@ for i in range (ngen):
 
 print()
 print ("Testo decrittato\n")
-if max_pop.get_decritt==0:
+if max_pop.get_decritt()==0:
     print( crittografia.decritt_Vigenere(critt_message,max_pop.get_key()))
 else:
     print( crittografia.decritt_permutation(critt_message,max_pop.get_key()))
