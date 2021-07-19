@@ -149,15 +149,6 @@ class Individual(list):# gli individui sono le chiavi
             if "  " in new_message:
                 fitness=1
         
-        else:
-
-            if max_len>25:
-                
-                fitness-=200
-                        
-
-            if "  " in new_message:
-                fitness-=200
         
         fitness=max(fitness,1)
 
